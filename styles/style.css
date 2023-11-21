@@ -1,5 +1,536 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--main-background-color);
+}
+
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.content {
+  padding: 10px;
+}
+
+.header .title {
+  align-self: center;
+}
+
+.header .header__theme-menu {
+  margin-block-start: 65px;
+  align-self: end;
+}
+
+.header .epigraph {
+  align-self: center;
+}
+
+.epigraph {
+   max-width: 355px;
+   background-color: var(--text-background-color);
+}
+
+.header h1 {
+  color: var(--text-color);
+  text-shadow: 4px 4px 0px var(--text-background-color);
+  font-family: var(--main-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__theme-menu-item {
+  font-size: 18px;
+  font-weight: var(--main-font-weight);
+  line-height: 18px;
+}
+
+.header__theme-menu-item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.first_section {
+  padding-top: 30px;
+}
+
+.accent_block {
+  margin-bottom: 20px;
+}
+
+.block h4 {
+  margin-bottom: 10px;
+  background-color: var(--text-background-color);
+  width: 100%;
+}
+
+.block p {
+  margin-bottom: 20px;
+}
+
+h4:not(h4 + p) {
+  margin-bottom: 20px;
+  background-color: var(--text-background-color);
+  width: 100%;
+}
+
+.fourth_section img:not(last-child) {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.fourth_section h4 {
+  margin-bottom: 10px;
+}
+
+.decorated-zone {
+  display: flex;
+  min-height: 668px;
+  min-width: 355px;
+  padding: 10px;
+}
+
+.title {
+  margin: 66.5px 0px 55px 0px;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;	
+}
+
+.footer h2 {
+  color: var(--text-color);
+  text-shadow: 2px 2px 0px var(--text-background-color);
+  font-family: var(--main-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  padding-top: 10px;	
+}
+
+.first_section, .second_section, .third_section {
+  margin-bottom: 50px;
+}
+
+.fourth_section {
+  margin-bottom: 18px;
+}
+
+.header__theme-menu-button {
+  padding: 2px 13px 4px 12px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: none;
+  border-bottom: 1px var(--border-color) solid;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--border-color);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  text-transform: uppercase;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  text-transform: uppercase;
+  inline-size: 25px;
+  block-size: 25px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  bottom: 10px;
+  left: 10px;
+}
+
+.link_tilted_shadow {
+  text-shadow: 2px 2px var(--text-background-color);
+  text-decoration: none;
+}
+
+.link_direct_shadow  {
+  text-shadow: 2px 0px var(--text-background-color);
+  text-decoration: none;
+}
+
+.link_tilted_shadow:hover {
+  text-decoration: none;
+  border-bottom: 1px  solid var(--border-color);
+}
+
+.link_direct_shadow:hover 
+ {
+  text-decoration: underline;
+}
+
+.link_tilted_shadow:focus,
+.link_direct_shadow:focus {
+  border: 1px solid var(--border-color);
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+
+.decorated-zone {
+  min-height: 1024px;
+}
+
+.footer  {
+  padding: 20px 20px 20px 20px;
+}
+
+.header   {
+  padding: 20px 20px 20px 0px;
+}
+
+.epigraph {
+  min-width: 364px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.first_section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.first_section, .second_section, .third_section {
+  margin-bottom: 60px;
+}
+
+.fourth_section{
+  margin-bottom: 40px;
+} 
+
+.second_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_row {
+  display: flex;
+  flex-direction: column;
+}
+
+.third_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accent_block{
+  min-width: 236px;
+  font-weight: 700;
+}
+
+.text_column .block {
+  max-width: 650px;
+}
+
+.fourth_section {
+  display: grid;
+  min-height: 823px;
+  max-height: 1091px; 
+}
+
+.fourth_section h4 {
+  margin-bottom: 20px;
+}
+
+.photo_gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  block-size: 780px;
+}
+
+.photo_gallery img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo_1 { 
+  grid-area: 1 / 1 / 2 / 3; 
+  min-height: 192px;
+}
+
+.photo_2 { 
+  grid-area: 2 / 1 / 5 / 2; 
+  max-height: 568px;
+}
+
+.photo_3 { 
+  grid-area: 2 / 2 / 3 / 3; 
+   min-height: 230px;
+}
+
+.photo_4 { 
+  grid-area: 1 / 3 / 3 / 4; 
+  max-height: 441px;
+}
+
+.photo_5 { 
+  grid-area: 3 / 2 / 5 / 4; 
+  max-height: 318px;
+}
+
+
+.block p {
+  margin-bottom: 0px;
+}
+
+.block:not(p:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.text_row .block {
+  min-width: 728px;
+}
+
+.accent_block {
+  max-width: 236px;
+}
+
+.header .header__theme-menu {
+  margin-block-start: 172px;
+}
+
+.header .title {
+  align-self: start;
+  margin: 174px 0px 162px 0px;
+}
+
+.header .epigraph {
+  max-width: 355px;
+  align-self: end;
+  margin-bottom: 155px;
+}
+.text_column .block {
+  max-width: 472px;
+}
+
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  left: 20px;
+  bottom: 20px;
+}
+
+}
+
+@media (min-width: 1024px){
+
+.decorated-zone {
+  min-height: 768px;
+}
+
+.header .header__theme-menu {
+  align-self: center;
+  margin-block-start: 0px;
+}
+
+.header__theme-menu-button {
+   padding: 2px 13px 4px 12px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+ min-height: 40px;
+}
+
+.header .title {
+  margin: 260px 0px 114px 0px;
+}
+
+.decorated-zone {
+  padding: 20px;
+}
+
+.epigraph {
+  min-width: 491px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.first_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first_section, .second_section, .third_section{
+  margin-bottom: 60px;
+}
+
+.fourth_section{
+  margin-bottom: 40px;
+}
+
+.second_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.third_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accent_block{
+  min-width: 236px;
+  font-weight: 700;
+}
+
+.text_column .block {
+  min-width: 650px;
+}
+
+.fourth_section{
+  display: grid;
+  min-height: 768px;
+  max-height: 1091px; 
+}
+
+.photo_gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  block-size: 1050px;
+}
+
+.photo_gallery img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.photo_1 { 
+  grid-area: 1 / 1 / 2 / 3; 
+  min-height: 260px;
+}
+
+.photo_2 { 
+  grid-area: 2 / 1 / 5 / 2; 
+  max-height: 768px;
+}
+
+.photo_3 { 
+  grid-area: 2 / 2 / 3 / 3; 
+   min-height: 315px;
+}
+
+.photo_4 { 
+  grid-area: 1 / 3 / 3 / 4; 
+  max-height: 595px;
+}
+
+.photo_5 { 
+  grid-area: 3 / 2 / 5 / 4; 
+  max-height: 428px;
+}
+
+.block p {
+  margin-bottom: 0px;
+}
+
+.block:not(p:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.text_row .block {
+  min-width: 315px;
+}
+
+.accent_block {
+  max-width: 315px;
+}
+
+.title {
+  margin: 163px 0px 160px 0px;
+  align-self: start;
+}
+
+.header .title {
+  align-self: start;
+  margin-left: -20px;
+}
+
+.header h1 {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.footer h2 {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  padding-bottom: 25px;
+}
+
+.header .epigraph {
+  max-width: 355px;
+  align-self: end;
+  margin-bottom: 155px;
+}
+
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  left: 20px;
+}
+
+.title {
+  margin-bottom: 114px;
+	
+}
+
+.header .epigraph {
+  margin-bottom: 105px;
+}
+
 }
