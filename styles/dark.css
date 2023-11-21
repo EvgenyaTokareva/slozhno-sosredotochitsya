@@ -1,12 +1,131 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url(../images/cover-image-dark.png);
+  background-color: #00183F;
+}
+
+.theme_dark  .epigraph {
+  background-color: #FF0070;
+}
+
+.theme_dark  .header h1 {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+}
+
+.accent_block {
+  color: #DB00FF;
+}
+
+.theme_dark  .block h4 {
+  background-color: #FF0070;
+}
+
+.theme_dark .block p
+ {
+  color: #F1B2CE;
+}
+
+.theme_dark .accent_block
+ {
+  color: #FF0070;
+}
+
+.theme_dark  h4:not(h4 + p) {
+  background-color: #FF0070;
+}
+
+.theme_dark  .footer h2 {
+  color: #DB00FF;
+  text-shadow: 2px 2px 0px #FF0070;
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.theme_dark  .header__theme-menu-button:focus {
+  border-bottom: 1px #FF0070 solid;
+}
+
+.theme_dark  .header__theme-menu-button_active {
+  border: 1px solid #FF0070;
+}
+
+.theme_dark  .decorated-zone::before {
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+}
+
+.theme_dark  .decorated-zone::after {
+  border-bottom: 1px solid #FF0070;
+  border-left: 1px solid #FF0070;
+}
+
+.theme_dark  .link_tilted_shadow {
+  text-shadow: 2px 2px #FF0070;
+}
+
+.theme_dark  .link_direct_shadow  {
+  text-shadow: 2px 0px #FF0070;
+}
+
+.theme_dark  .link_tilted_shadow:hover {
+  border-bottom: 1px  solid #FF0070;
+}
+
+.theme_dark  .link_tilted_shadow:focus,
+.theme_dark  .link_direct_shadow:focus {
+  border: 1px solid #FF0070;
+}
+
+.theme_dark .header__theme-menu-item {
+  color: #FF0070;
+	
+}
+
+.theme_dark .header__theme-menu-button_type_dark {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+
+.theme_dark .logotip::before {
+  position: absolute;
+  content: "REC";
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  align-self: center;
+  top: 10px;
+  right: 38px;
+}
+
+.theme_dark .logotip::after {
+  position: absolute;
+  content: ' \25CF';
+  top: 10px;
+  right: 17px;
+  color: #FF0070;
+  fill: #FF0070;
+  filter: drop-shadow(0px 0px 4px #FF0070;);
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+.theme_dark .logotip::before,
+.theme_dark .logotip::after {
+  top: 20px;
+}
+
+.theme_dark .logotip::before {
+  right: 50px;
+}
+
+.theme_dark .logotip::after {
+  right: 27px;
+}
+
 }
