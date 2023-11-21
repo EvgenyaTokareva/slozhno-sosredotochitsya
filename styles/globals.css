@@ -10,6 +10,10 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-family: var(--main-family, Arial);
+  font-size: var(--main-font-size, 18px);
+  line-height: var(--main-line-height);
+  font-weight: var(--main-font-weight);
 }
 
 h1,
@@ -20,6 +24,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: var(--main-font-size);
 }
 
 ul {
@@ -39,4 +44,13 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+
+button:focus,
+a:focus{
+  outline: none;
 }
