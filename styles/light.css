@@ -11,8 +11,7 @@
   color: var(--text-color);
 }
 
-.theme_light .accent_block
- {
+.theme_light .accent_block {
   color: #353430;
 }
 
@@ -59,7 +58,7 @@
   text-shadow: 2px 2px var(--text-background-color);
 }
 
-.theme_light  .link_direct_shadow  {
+.theme_light  .link_direct_shadow {
   text-shadow: 2px 0px var(--text-background-color);
 }
 
