@@ -248,7 +248,8 @@ h4:not(h4 + p) {
 .accent_block {
   min-width: 236px;
   font-weight: 700;
-  max-width: 236px;}
+  max-width: 236px;
+}
 
 .text_column .block {
   max-width: 472px;
@@ -271,7 +272,7 @@ h4:not(h4 + p) {
   width: 100%; 
   height: 100%;
   object-fit: cover;
-  }
+}
 
 .photo_1 {
   grid-area: 1 / 1 / 2 / 3; 
@@ -281,16 +282,17 @@ h4:not(h4 + p) {
 .photo_2 {
   grid-area: 2 / 1 / 5 / 2;
   max-height: 568px;
-  }
+}
 
 .photo_3 {
   grid-area: 2 / 2 / 3 / 3; 
   min-height: 230px;
-  }
+}
 
 .photo_4 {
   grid-area: 1 / 3 / 3 / 4; 
-  max-height: 441px;}
+  max-height: 441px;
+}
 
 .photo_5 {
   grid-area: 3 / 2 / 5 / 4; 
