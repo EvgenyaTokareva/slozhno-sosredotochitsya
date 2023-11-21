@@ -1,6 +1,6 @@
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
-  background-color: #000028;
+  background-color: #000028
 }
 
 .theme_dark  .epigraph {
@@ -13,18 +13,20 @@
 }
 
 .accent_block {
-  color: #DB00FF;
+  color: #FF0070;
 }
 
 .theme_dark  .block h4 {
   background-color: #FF0070;
 }
 
-.theme_dark .block p {
+.theme_dark .block p
+ {
   color: #F1B2CE;
 }
 
-.theme_dark .accent_block {
+.theme_dark .accent_block
+ {
   color: #FF0070;
 }
 
@@ -63,7 +65,7 @@
   text-shadow: 2px 2px #FF0070;
 }
 
-.theme_dark  .link_direct_shadow {
+.theme_dark  .link_direct_shadow  {
   text-shadow: 2px 0px #FF0070;
 }
 
