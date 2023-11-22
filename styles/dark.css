@@ -2,9 +2,9 @@
   background-image: url(../images/cover-image-dark.png);
   background-color: #000028;
   --main-family: "IBM Plex mono", sans-serif;
-  --main-background-color: #000028; 
-  --text-background-color: #FF0070; 
-  --text-color: #DB00FF; 
+  --main-background-color: #000028;
+  --text-background-color: #FF0070;
+  --text-color: #DB00FF;
   --border-color: #FF0070;
 }
 
@@ -118,9 +118,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
- --main-family: "IBM Plex mono", sans-serif;
-  --main-background-color: #000028; 
-  --text-background-color: #FF0070; 
+  --main-family: "IBM Plex mono", sans-serif;
+  --main-background-color: #000028;
+  --text-background-color: #FF0070;
   --text-color: #DB00FF; 
   --border-color: #FF0070;
 }
