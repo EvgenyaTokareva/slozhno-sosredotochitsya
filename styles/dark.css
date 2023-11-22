@@ -2,14 +2,15 @@
   background-image: url(../images/cover-image-dark.png);
   background-color: #000028;
   --main-family: "IBM Plex mono", sans-serif;
-  --main-background-color: #000028;
-  --text-background-color: #FF0070;
-  --text-color: #DB00FF;
+  --main-background-color: #000028; 
+  --text-background-color: #FF0070; 
+  --text-color: #DB00FF; 
   --border-color: #FF0070;
 }
 
 .page.theme_dark .title-decor {
    background-color: var(--text-background-color);
+   color: #000028;
 }
 
 .page.theme_dark .content .accent_block {
@@ -118,85 +119,86 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --main-family: "IBM Plex mono", sans-serif;
-  --main-background-color: #000028;
-  --text-background-color: #FF0070;
+ --main-family: "IBM Plex mono", sans-serif;
+  --main-background-color: #000028; 
+  --text-background-color: #FF0070; 
   --text-color: #DB00FF; 
   --border-color: #FF0070;
 }
 
-.page.theme_dark.page {
+.page {
   background-image: url(../images/cover-image-dark.png);
   background-color: var(--main-background-color);
   
 }
 
-.page.theme_dark .title-decor {
+.title-decor {
    background-color: var(--text-background-color);
+   color: #000028;
 }
 
-.page.theme_dark .content .accent_block {
+.content .accent_block {
   color: var(--text-background-color);
 }
 
-.page.theme_dark .header__theme-menu-item {
+.header__theme-menu-item {
 	color: var(--text-background-color);
 }
 
-.page.theme_dark .header .title {
+.header .title {
   color: var(--text-color);
   text-shadow: 4px 4px 0px var(--text-background-color);
 }
 
-.page.theme_dark .block .block_text {
+.block .block_text {
   color: #F1B2CE;
 }
 
-.page.theme_dark .block .title-decor {
+.block .title-decor {
   background-color: var(--text-background-color);
 }
 
-.page.theme_dark .footer .title {
+.footer .title {
   color: var(--text-color);
   text-shadow: 2px 2px 0px var(--text-background-color);
 }
 
-.page.theme_dark .header__theme-menu-button:focus-visible {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px var(--border-color) solid;
 }
 
-.page.theme_dark .header__theme-menu-button_active {
+.header__theme-menu-button_active {
   border: 1px solid var(--border-color);
 }
 
-.page.theme_dark .decorated-zone::before {
+.decorated-zone::before {
   border-top: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
 
-.page.theme_dark .decorated-zone::after {
+.decorated-zone::after {
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
 }
 
-.page.theme_dark .link_tilted_shadow {
+.link_tilted_shadow {
   text-shadow: 2px 2px var(--text-background-color);
 }
 
-.page.theme_dark .link_direct_shadow {
+.link_direct_shadow {
   text-shadow: 2px 0px var(--text-background-color);
 }
 
-.page.theme_dark .link_tilted_shadow:hover {
+.link_tilted_shadow:hover {
   border-bottom: 1px  solid var(--border-color);
 }
 
-.page.theme_dark .link_tilted_shadow:focus-visible,
-.page.theme_dark .link_direct_shadow:focus-visible {
+.link_tilted_shadow:focus-visible,
+link_direct_shadow:focus-visible {
   border: 1px solid var(--border-color);
 }
 
-.page.theme_dark .logotip::before {
+.logotip::before {
   position: absolute;
   content: "REC";
   color: #FF0070;
@@ -211,7 +213,7 @@
   right: 38px;
 }
 
-.page.theme_dark .logotip::after {
+.logotip::after {
   position: absolute;
   content: ' \25CF';
   top: 10px;
@@ -223,16 +225,16 @@
 }
 
 @media (min-width: 768px) {
-.page.theme_dark .logotip::before,
-.theme_dark .logotip::after {
+.logotip::before,
+.logotip::after {
   top: 20px;
 }
 
-.page.theme_dark .logotip::before {
+.logotip::before {
   right: 50px;
 }
 
-.page.theme_dark .logotip::after {
+.logotip::after {
   right: 27px;
   top: 20px;
 }
