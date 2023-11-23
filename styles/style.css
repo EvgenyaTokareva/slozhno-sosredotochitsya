@@ -41,6 +41,7 @@
   font-weight: 700;
   line-height: 82.5%;
   align-self: center;
+  margin: 66.5px 0px 55px 0px;
 }
 
 .header__theme-menu-item {
@@ -93,10 +94,6 @@
   min-width: 355px;
   padding: 10px;
   height: 100vh;
-}
-
-.header .title {
-  margin: 66.5px 0px 55px 0px;
 }
 
 .footer {
@@ -210,10 +207,6 @@
     padding: 20px 20px 20px 0px;
   }
 
-  .header .title-decor {
-    min-width: 364px;
-  }
-
   .content {
     padding: 20px;
   }
@@ -325,10 +318,11 @@
     margin: 174px 0px 162px 0px;
   }
 
-  .header .title-decor{
+  .header .title-decor {
     max-width: 355px;
     align-self: end;
     margin-bottom: 155px;
+	min-width: 364px;
 }
 
   .decorated-zone::before {
