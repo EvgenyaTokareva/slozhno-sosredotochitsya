@@ -63,7 +63,7 @@
   text-shadow: 2px 0px var(--text-background-color);
 }
 
-.page .theme_light .header__theme-menu-button:hover {
+.page.theme_light .header__theme-menu-button:hover {
   border: 1px solid rgba(50, 49, 45, 0.4);
 }
 
